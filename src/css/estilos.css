@@ -1,4 +1,4 @@
-body{
+body {
     /* Cada propriedade mais explicada:
     background-image: url(../imagens/fundo-site.jpg);
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body{
     padding: 30px;
 }
 
-.cartao{
+.cartao {
     background-color: #070d12;
     width: 370px;
     border: 2px solid #e126d9;
@@ -34,39 +34,55 @@ body{
     overflow: hidden;
 }
 
-.cartao .minhas-informacoes{
+.cartao .minhas-informacoes {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* alinha horizontalmente por causa do flex direction column*/
+    align-items: center; 
     gap: 10px;
 }
 
-.cartao .minhas-informacoes img{
+.cartao .minhas-informacoes img {
     width: 96px;
     height: 96px;
     border-radius: 50px;
     border: 4px solid #02b08f;
 }
 
-.cartao .minhas-informacoes .nome{
+.cartao .minhas-informacoes img:hover {
+    scale: 105%;
+    transition: 0.2s;
+    border: 4px solid #02b090d6;
+}
+
+.cartao .minhas-informacoes .nome {
     font-size: 26px;
 }
 
-.cartao .minhas-informacoes .cargo{
+.cartao .minhas-informacoes .nome:hover {
+    color: #02b08f;
+    transition: 0.2s;
+}
+
+.cartao .minhas-informacoes .cargo {
     font-size: 20px;
     color: #b8bbc5;
 }
 
-.cartao .conteudo{
+.cartao .minhas-informacoes .cargo:hover {
+    color: #02715d;
+    transition: 0.2s;
+}
+
+.cartao .conteudo {
     margin-top: 15px;
 }
 
-.cartao .conteudo .abas{
+.cartao .conteudo .abas {
     display: flex;
 }
 
-.cartao .conteudo .abas .aba{
+.cartao .conteudo .abas .aba {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -75,50 +91,65 @@ body{
     transition: background-color 0.2s ease-in-out;
 }
 
-.cartao .conteudo .abas img{
+.cartao .conteudo .abas img {
     width: 30px;
 }
 
-.cartao .abas .aba.selecionado{
+.cartao .abas .aba.selecionado {
     background-color: #262626;
 }
 
-.cartao .informacoes-abas{
+.cartao .informacoes-abas {
     background-color: #262626;
 }
 
-.cartao .abas .aba:hover{
+.cartao .abas .aba:hover {
     background-color: #414141;
 }
 
-.informacoes-abas .informacao{
+.informacoes-abas .informacao {
     min-height: 260px;
     padding: 15px;
     display: none;
 }
 
-.informacoes-abas .informacao.selecionado{
+.informacoes-abas .informacao.selecionado {
     display: block;
 }
 
-.informacoes-abas .sub-titulo{
+.informacoes-abas .sub-titulo {
     font-size: 22px;
     margin-bottom: 25px;
     text-align: center;
 }
 
-.informacoes-abas .descricao{
+.informacoes-abas .sub-titulo:hover {
+    color: #02b08f;
+    transition: 0.2s;
+}
+
+.informacoes-abas .descricao {
     font-size: 20px;
     max-height: 180px; 
     overflow-y: auto;
     padding-right: 15px; 
 }
 
-.informacoes-abas .descricao span{
+.informacoes-abas .descricao span.nome-texto:hover {
+    color: #02b08f;
+    transition: 0.2s;
+}
+
+.informacoes-abas .descricao span.linguagens {
     color: #02d08f;
 }
 
-.redes-sociais{
+.informacoes-abas .descricao span.linguagens:hover {
+    color: #02715d;
+    transition: 0.2s;
+}
+
+.redes-sociais {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -127,7 +158,7 @@ body{
     overflow-y: auto;
 }
 
-.redes-sociais li a{
+.redes-sociais li a {
     width: 250px;
     display: block;
     color: #f3f3f3;
@@ -137,7 +168,7 @@ body{
     transition: oppacity 0.3s ease-in-out;
 }
 
-.redes-sociais li a:hover{
+.redes-sociais li a:hover {
     opacity: 0.8;
 }
 
@@ -145,10 +176,10 @@ body{
     background-color: #06c185;
 }
 
-.redes-sociais .linkedin{
+.redes-sociais .linkedin {
     background-color: #1d87bd;
 }
 
-.redes-sociais .github{
+.redes-sociais .github {
     background-color: #545454;
 }
